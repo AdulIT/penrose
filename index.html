@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,23 +24,15 @@
                     <li class="menu__item"><a href="#" class="menu__link">Collections</a></li>
                     <li class="menu__item">
                         <a href="#" class="menu_link">
-                            <!-- <select name="store" id="store" class="menu__select">
-                                <option selected hidden class="menu__select_option">Store</option>
-                                <option value="Women" class="menu__select_option">Women</option>
-                                <option value="Men" class="menu__select_option">Men</option>
-                                <option value="Kids" class="menu__select_option">Kids</option>
-                            </select> -->
-
                             <div class="menu__dropdown-wrapper">
                                 <button class="menu__dropdown_btn">Store</button>
                                 <ul class="menu__dropdown_list">
-                                    <li class="menu__dropdown_list-item">Store</li>
-                                    <li class="menu__dropdown_list-item">Women</li>
-                                    <li class="menu__dropdown_list-item">Men</li>
-                                    <li class="menu__dropdown_list-item">Kids</li>
+                                    <li class="menu__dropdown_list-item"><a href="#">Store</a></li>
+                                    <li class="menu__dropdown_list-item"><a href="#">Women</a></li>
+                                    <li class="menu__dropdown_list-item"><a href="#">Men</a></li>
+                                    <li class="menu__dropdown_list-item"><a href="#">Kids</a></li>
                                 </ul>
                             </div>
-
                         </a>
                     </li>
                     <li class="menu__item"><a href="#" class="menu__link">Contacts</a></li>
@@ -48,6 +41,50 @@
         </header>
     </div>
 
+    <main class="main">
+        <div class="container">
+            <div class="main__wrapper">
+                <div class="main__right">
+                    <img src="./icons/Title.svg" alt="title" class="main__text-img">
+                    <iframe width="160" height="90" src="https://www.youtube.com/embed/-eqdj63nEr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="main__video" allowfullscreen modestbranding="1" showinfo="0"></iframe>
+                </div>
+
+                <div class="main__woman">
+                    <img src="./img/Model@2x.png" alt="woman" class="main__woman-img">
+                </div>
+
+                <div class="main__slider swiper-container">
+                    <div class="main__swiper-wrapper swiper-wrapper">
+                        <div class="main__slide swiper-slide">
+                            <div class="main__slider-quote">“</div>
+                            <div class="main__slider-name">Maybelline Face Studio Master</div>
+                            <div class="main__slider-price">14.99</div>
+                        </div>
+
+                        <div class="main__slide swiper-slide">
+                            <div class="main__slider-quote">“</div>
+                            <div class="main__slider-name">Maybelline Face Studio Master</div>
+                            <div class="main__slider-price">14.99</div>
+                        </div>
+
+                        <div class="main__slide swiper-slide">
+                            <div class="main__slider-quote">“</div>
+                            <div class="main__slider-name">Maybelline Face Studio Master</div>
+                            <div class="main__slider-price">14.99</div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

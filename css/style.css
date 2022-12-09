@@ -46,7 +46,7 @@ img {
 }
 
 .nav .menu {
-    width: 435px;
+    width: 500px;
     display: flex;
     justify-content: space-between;
 }
@@ -59,8 +59,21 @@ img {
 .menu .menu__link-first {
     color: #EECAFC;
 }
-
-
+.menu .menu__item {
+    padding: 12px;
+    height: 47px;
+}
+.menu .menu__item:not(:first-child):hover {
+    background: rgba(235, 0, 255, 0.24) 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    text-align: left;
+}
+.menu__link:hover, .menu__dropdown_btn:hover {
+    color: #FF00FF;
+}
+.menu .menu__link-first:hover {
+    color: #EECAFC;
+}
 .menu__dropdown-wrapper {
     position: relative;
 }
@@ -100,10 +113,90 @@ img {
     text-transform: none;
     color: #191AC1;
     padding: 5px;
-    z-index: 1;
+    z-index: 3;
+}
+.menu__dropdown_list-item a {
+    color: #191AC1;
 }
 .menu__dropdown_list--visible {
     display: block;
 }
 
-/* .menu__dropdown_list-item {} */
+.main {
+    min-height: 100vh;
+    background: url('../icons/Triangle-edited.svg') center 172px/680px 588px no-repeat;
+}
+.main__wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+.main__right {
+    margin: 55px 0 0 78px;
+    width: 283px;
+    height: 417px;
+    display: flex;
+    flex-direction: column;
+}
+.main__text-img {
+    width: 283px;
+    height: 417px;
+}
+.main__video {
+    margin-top: 48px;
+}
+
+.main__swiper-wrapper {
+    padding: 0 50px;
+}
+
+.main__slider {
+    position: relative;
+    margin-top: 105px;
+    padding-top: 10px;
+    overflow: hidden;
+    width: 392px;
+    height: 166px;
+}
+.main__slide {
+    width: 312px;
+}
+.main__slider-quote {
+    color: #C445F4;
+    font-size: 3rem;
+}
+
+.main__slider-name, .main__slider-price {
+    color: #fff;
+    font: normal normal 400 18px/23px Source Sans Pro;
+    max-width: 270px;
+}
+.main__slider-price {
+    color: #639EFA;
+    text-align-last: right;
+}
+
+/* Swiper JS styles */
+/* .swiper-button-next, .swiper-button-prev {
+    
+} */
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    display: none;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    color: #C445F4;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.main__slider .swiper-pagination {
+    position: inherit;
+    display: flex;
+    margin: 15px auto 0;
+    width: 50px;
+    height: 8px;
+    justify-content: space-between;
+    align-items: center;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #fff;
+}
