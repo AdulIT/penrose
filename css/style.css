@@ -164,9 +164,13 @@ ul {
     position: relative;
     margin-top: 105px;
     padding-top: 10px;
-    overflow: hidden;
+    overflow: auto;
     width: 392px;
     height: 166px;
+}
+.main__slider::-webkit-scrollbar { /* webkit */
+    /* display: none; */
+    visibility: hidden;
 }
 .main__slide {
     width: 312px;
@@ -208,7 +212,7 @@ ul {
     justify-content: space-between;
     align-items: center;
 }
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
+.swiper-pagination-bullet, .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: #fff;
 }
 
