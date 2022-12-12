@@ -245,7 +245,6 @@ ul {
         width: 720px;
     }
     .header {
-        padding-top: 60px;
         height: 85px;
     }
     .header .logo {
@@ -328,6 +327,7 @@ ul {
 
 @media (max-width: 576px) {
     .container {
+        padding: 10px;
         width: 100%;
     }
     .nav .menu {
